@@ -1,8 +1,16 @@
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "studyforge-mcq-generator"
 version = "2.0.0"
 description = "Source-grounded MCQ generation with retrieval, evaluation, and quiz mode"
 requires-python = ">=3.10"
+
+[tool.setuptools.packages.find]
+include = ["mcqgen*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
