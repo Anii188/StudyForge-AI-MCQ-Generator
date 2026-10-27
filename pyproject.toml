@@ -1,0 +1,9 @@
+[project]
+name = "studyforge-mcq-generator"
+version = "2.0.0"
+description = "Source-grounded MCQ generation with retrieval, evaluation, and quiz mode"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
